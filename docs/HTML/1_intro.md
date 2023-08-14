@@ -53,11 +53,11 @@ The HTML **element** is everything from the start tag to the end tag:
 <p>My first paragraph.</p>
 ```
 
-| Start tag | Element content   | End tag |
-|-----------|-------------------|---------|
-| `<h1>`    | My First Heading  | `</h1>` |
-| `<p>`     | My first paragraph.| `</p>`  |
-| `<br>`    | none              | none    |
+| Ахъаюнин тег | Элементдин беден   | КӀевунин тег |
+|--------------|--------------------|--------------|
+| `<h1>`       | My First Heading   | `</h1>`      |
+| `<p>`        | My first paragraph.| `</p>`       |
+| `<br>`       | none               | none         |
 
 
 :::tip Note
