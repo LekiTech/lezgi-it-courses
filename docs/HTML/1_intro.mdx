@@ -1,0 +1,120 @@
+---
+sidebar_position: 1
+description: HTML-чинар туькIуьрзава.
+---
+
+import Hint from '../../src/components/Hint';
+
+# HTML. Чирхчир хьун.
+
+HTML - веб-чинар туькIуьрунин стандарт я.
+
+## HTML вуч я?
+
+- HTML - гьипертекст <Hint>яржунин чIал</Hint> я (ингл. HyperText Markup Language);
+- HTML-ди веб-чинин структура туькIуьрзава.
+- HTML вич HTML-элементрикай туькIуьр жезва.
+- HTML-элементри браузердиз веб-чина авай инфо гьикI къалурдатIа лугьузва.
+- HTML-элементри веб-чинин кIусарик манаяр кутазва. Месела, "им веб-чинин <Hint>кIукI</Hint> я", "им шикил я", гьакIни мад.
+
+## ГьакIан HTML-документ
+
+```html title="Месела"
+<!DOCTYPE html>
+<html>
+<head>
+<title>Чинин тIвар</title>
+</head>
+<body>
+
+<h1>Зи садлагьай кьил</h1>
+<p>Зи садлагьай параграф</p>
+
+</body>
+</html>
+```
+### Гъавурда тун
+
+- Чна `<!DOCTYPE html>` кхьизватIа, ам чна HTML5-документ туькIуьрзава лагьай чIал я. `HTML5` - HTML-дин вадлагьай версия я.
+- `html` элемент - чи HTML-чинин дувул я. `<html>` - им HTML-чинин <Hint>и-кьил</Hint> я. `</html>` - им HTML-чинин <Hint>а-кьил</Hint> я.
+- `head` элемент - им чна чи мета-гайияр хуьзвай чка я. А гайияр браузерриз, жугъурунин системайриз герек я. `<head>` - им `head` элементдин <Hint>и-кьил</Hint> я. `</head>` - им `head` элементдин <Hint>а-кьил</Hint> я.
+- `title` элементди чи HTML-чиниз тIвар гузва. Ам чаз браузерди чинин тIвар къалурзавай чкада аквазва. Адет яз, а чка браузердин дакIардин вине ава.
+- `body` элемент чи документдин беден я. Адан къене чи вилиз аквадай затIар ава (текстар, шикилар, гьакIни мад).
+- `h1` элемент - им садлагьай (виридлайни чIехи тир) дережадин <Hint>кьил</Hint> я. Ада вири чиниз талукь тир тIвар гузва. Мад гьихьтин кьилер аватIа чна мукьвара чирда.
+- `p` элемент - им текстдин параграф я.
+
+## HTML-элемент вуч я?
+HTML-элементдин туькIуьр хьунухь:
+1. ахъаюнин тег;
+2. <Hint>къенепад</Hint>;
+3. кIевунин тег;
+
+```html
+<тегдинТIвар> Им къенепад я... </тегдинТIвар>
+```
+
+Ахъаюнин тегдалай кIевунин тегдалди - им вири **HTML-элемент** я:
+
+```html
+<h1>Зи садлагьай кьил</h1>
+<p>Зи садлагьай параграф</p>
+```
+
+| Ахъаюнин тег | <Hint>Къенепад</Hint>| КIевунин тег |
+|--------------|----------------------|--------------|
+| `<h1>`       | Зи садлагьай кьил    | `</h1>`      |
+| `<p>`        | Зи садлагьай параграф| `</p>`       |
+| `<br>`       | *авач*               | *авач*       |
+
+
+:::tip Note
+
+Са-са HTML-элементриз <Hint>къенепад</Hint> авач. Ахьтин элементриз **ичIи элементар** лугьуда. ИчIи элементриз кIевунин тег авач.
+
+:::
+
+
+## Веб-браузерар
+Веб-браузердин (месела, Chrome, Edge, Firefox, Safari) метлеб - HTML-документ кIелун, ахпа чаз къенидаказ къалурун.
+Браузерди HTML-тегар къалурзавачтIани, ада абур кIелдайла, адаз инфо гьикI къалурдатIа чир жезва.
+
+![Chrome web browser](./1_intro/img_chrome.png)
+
+## HTML-чинин структура
+
+<div style={{ backgroundColor: '#E7E9EB', color: 'black', width: '99%', border: '1px solid grey', padding: '3px', margin: '0' }}>
+  &lt;html&gt;
+  <div style={{ width: '90%', border: '1px solid grey', padding: '3px', margin: '20px' }}>
+    &lt;head&gt;
+    <div style={{ width: '90%', border: '1px solid grey', padding: '5px', margin: '20px' }}>
+      &lt;title&gt;Чинин тIвар&lt;/title&gt;
+    </div>
+    &lt;/head&gt;
+  </div>
+  <div style={{ backgroundColor: '#E7E9EB', color: 'black', width: '90%', border: '1px solid grey', padding: '3px', margin: '20px' }}>
+    &lt;body&gt;
+    <div style={{ backgroundColor: '#fff', color: 'black', width: '90%', border: '1px solid grey', padding: '3px', margin: '20px' }}>
+      <div style={{ width: '90%', border: '1px solid grey', padding: '5px', margin: '20px' }}>
+        &lt;h1&gt;Им кьил я&lt;/h1&gt;
+      </div>
+      <div style={{ width: '90%', border: '1px solid grey', padding: '5px', margin: '20px' }}>
+        &lt;p&gt;Им параграф я&lt;/p&gt;
+      </div>
+      <div style={{ width: '90%', border: '1px solid grey', padding: '5px', margin: '20px' }}>
+        &lt;p&gt;Им мад са параграф я&lt;/p&gt;
+      </div>
+    </div>
+    &lt;/body&gt;
+  </div>
+  &lt;/html&gt;
+</div>
+<br />
+
+:::tip Note
+
+HTML-чинин структура икI чIугайтIа жеда. `<body>` элементдин <Hint>къенепад</Hint> чаз браузерда аквазва. `<title>` элементдин <Hint>къенепад</Hint> чаз браузерди чинин тIвар къалурзавай чкада аквазва.
+
+:::
+
+
+<i style={{float: 'right'}}>Чешме: <a href="https://www.w3schools.com/html/html_intro.asp" target="_blank">Introduction to HTML</a></i>
