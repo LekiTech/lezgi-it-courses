@@ -92,7 +92,8 @@ const config = {
             items: [
               {
                 label: 'Тарсар',
-                to: '/docs/intro',
+                // to: '/docs/intro',
+                to: '/docs/HTML/intro',
               },
             ],
           },
